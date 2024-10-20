@@ -1,4 +1,4 @@
-import './assets/styles.scss'
+import './static/styles.scss'
 
 import { createApp } from 'vue'
 import App from './App.vue'
