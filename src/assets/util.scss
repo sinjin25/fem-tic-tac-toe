@@ -1,0 +1,242 @@
+$sizes: 'md', 'lg';
+
+$paddings: 0, 6, 8, 12, 14, 16, 18, 20, 22, 24, 26, 30, 32, 40, 48, 50, 64, 66;
+
+@each $val in $paddings {
+    .pt-#{$val} {
+        padding-top: #{$val}px;
+    }
+
+    .pb-#{$val} {
+        padding-bottom: #{$val}px;
+    }
+
+    .pl-#{$val} {
+        padding-left: #{$val}px;
+    }
+
+    .pr-#{$val} {
+        padding-right: #{$val}px;
+    }
+
+    .px-#{$val} {
+        padding-left: #{$val}px;
+        padding-right: #{$val}px;
+    }
+
+    .py-#{$val} {
+        padding-top: #{$val}px;
+        padding-bottom: #{$val}px;
+    }
+}
+
+@each $s in $sizes {
+    @each $val in $paddings {
+        .pt-#{$s}-#{$val} {
+            padding-top: #{$val}px;
+        }
+    }
+}
+
+@each $s in $sizes {
+    @each $val in $paddings {
+        .pb-#{$s}-#{$val} {
+            padding-bottom: #{$val}px;
+        }
+    }
+}
+
+@each $s in $sizes {
+    @each $val in $paddings {
+        .pl-#{$s}-#{$val} {
+            padding-left: #{$val}px;
+        }
+    }
+}
+
+@each $s in $sizes {
+    @each $val in $paddings {
+        .pr-#{$s}-#{$val} {
+            padding-right: #{$val}px;
+        }
+    }
+}
+
+@each $s in $sizes {
+    @each $val in $paddings {
+        .px-#{$s}-#{$val} {
+            padding-left: #{$val}px;
+            padding-right: #{$val}px;
+        }
+    }
+}
+
+@each $s in $sizes {
+    @each $val in $paddings {
+        .py-#{$s}-#{$val} {
+            padding-top: #{$val}px;
+            padding-bottom: #{$val}px;
+        }
+    }
+}
+
+@each $val in $paddings {
+    .mt-#{$val} {
+        margin-top: #{$val}px;
+    }
+
+    .mb-#{$val} {
+        margin-bottom: #{$val}px;
+    }
+
+    .ml-#{$val} {
+        margin-left: #{$val}px;
+    }
+
+    .mr-#{$val} {
+        margin-right: #{$val}px;
+    }
+
+    .mx-#{$val} {
+        margin-left: #{$val}px;
+        margin-right: #{$val}px;
+    }
+
+    .my-#{$val} {
+        margin-top: #{$val}px;
+        margin-bottom: #{$val}px;
+    }
+}
+
+.mx-a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ml-a {
+    margin-left: auto;
+}
+
+@each $s in $sizes {
+    .mx-#{$s}-a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ml-#{$s}-a {
+        margin-left: auto;
+    }
+}
+
+@each $s in $sizes {
+    @each $val in $paddings {
+        .mt-#{$s}-#{$val} {
+            margin-top: #{$val}px;
+        }
+    }
+}
+
+@each $s in $sizes {
+    @each $val in $paddings {
+        .mb-#{$s}-#{$val} {
+            margin-bottom: #{$val}px;
+        }
+    }
+}
+
+@each $s in $sizes {
+    @each $val in $paddings {
+        .ml-#{$s}-#{$val} {
+            margin-left: #{$val}px;
+        }
+    }
+}
+
+@each $s in $sizes {
+    @each $val in $paddings {
+        .mr-#{$s}-#{$val} {
+            margin-right: #{$val}px;
+        }
+    }
+}
+
+@each $s in $sizes {
+    @each $val in $paddings {
+        .mx-#{$s}-#{$val} {
+            margin-left: #{$val}px;
+            margin-right: #{$val}px;
+        }
+    }
+}
+
+@each $s in $sizes {
+    @each $val in $paddings {
+        .my-#{$s}-#{$val} {
+            margin-top: #{$val}px;
+            margin-bottom: #{$val}px;
+        }
+    }
+}
+
+$text-align: left, center, right;
+
+@each $val in $text-align {
+    .ta-#{$val} {
+        text-align: $val;
+    }
+}
+
+$border-radius: 5, 10, 15;
+
+@each $val in $border-radius {
+    .br-#{$val} {
+        border-radius: #{$val}px;
+    }
+}
+
+$display: flex, inline-flex, block, none;
+
+@each $val in $display {
+    .d-#{$val} {
+        display: $val;
+    }
+}
+
+
+
+$percents: 25, 50, 100;
+
+@each $v in $percents {
+    .w-#{$v} {
+        width: percentage($v/ 100);
+    }
+}
+
+$font-weight: 400, 700;
+
+@each $v in $font-weight {
+    .fw-#{$v} {
+        font-weight: #{$v};
+    }
+}
+
+$font-size: 12, 14, 16, 18, 20, 24, 40;
+
+@each $v in $font-size {
+    .fz-#{$v} {
+        font-size: #{$v}px;
+    }
+}
+
+@each $s in $sizes {
+    @each $v in $font-size {
+        .fz-#{$s}-#{$v} {
+            font-size: #{$v}px;
+        }
+    }
+}
+
+// general
+.clickable {
+    cursor: pointer;
+}

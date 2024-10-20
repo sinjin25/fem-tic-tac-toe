@@ -1,0 +1,42 @@
+$sizes: 'md', 'lg';
+$align-items: center;
+
+// this also works for grid
+@each $val in $align-items {
+    .ai-#{$val} {
+        align-items: $val;
+    }
+}
+
+$justify-content: space-between, center;
+
+@each $val in $justify-content {
+    .jc-#{$val} {
+        justify-content: $val;
+    }
+}
+
+$gap: 8, 10, 16, 20, 24, 32, 40;
+
+@each $val in $gap {
+    .gap-#{$val} {
+        gap: #{$val}px;
+    }
+}
+
+@each $s in $sizes {
+    @each $val in $gap {
+        .gap-#{$s}-#{$val} {
+            gap: #{$val}px;
+        }
+    }
+}
+
+
+$direction: row, column;
+
+@each $val in $direction {
+    .fd-#{$val} {
+        flex-direction: $val;
+    }
+}

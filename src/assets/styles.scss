@@ -1,0 +1,20 @@
+@import url('./reset.scss');
+@import url('./colors.scss');
+@import url('./util.scss');
+@import url('./flex.scss');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    font-family: "Outfit", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.25;
+    letter-spacing: 1px;
+}
+
+button {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.25;
+    cursor: pointer;
+}
